@@ -54,10 +54,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="acT-1d-evo">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="acT-1d-evo">
                                 <rect key="frame" x="59" y="129" width="257" height="79"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="NXk-Q4-6R5"/>
+                                </constraints>
                                 <state key="normal" title="Test Keychain saving by clicking button to increment label integer value and deleting demo app and reinstalling">
                                     <color key="titleColor" red="0.074509803920000006" green="0.30363340179999998" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -65,17 +67,18 @@
                                     <action selector="incrementIntLabel:" destination="iii-AP-5Tj" eventType="touchUpInside" id="2gg-Sb-50x"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="integer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5J-Gw-OLM">
-                                <rect key="frame" x="160" y="323" width="54" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="integer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5J-Gw-OLM">
+                                <rect key="frame" x="160.5" y="323" width="54" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Uxg-B9-kDW">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Uxg-B9-kDW">
                                 <rect key="frame" x="59" y="461" width="257" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="bv5-qP-xNe"/>
+                                </constraints>
                                 <state key="normal" title="Test removing all keychain values by clicking button and deleting app and reinstalling app">
                                     <color key="titleColor" red="0.074509803920000006" green="0.30363340179999998" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -85,6 +88,20 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.1764705882" green="0.3921568627" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="bbd-sD-JmA" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="acT-1d-evo" secondAttribute="trailing" constant="59" id="1Qn-pV-F4j"/>
+                            <constraint firstItem="acT-1d-evo" firstAttribute="centerY" secondItem="H6q-Vb-Ay5" secondAttribute="centerY" constant="-165" id="4IT-nr-vZj"/>
+                            <constraint firstItem="acT-1d-evo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bbd-sD-JmA" secondAttribute="leading" constant="59" id="4v3-bM-u5u"/>
+                            <constraint firstItem="bbd-sD-JmA" firstAttribute="trailing" secondItem="t5J-Gw-OLM" secondAttribute="trailing" constant="160.5" id="CE2-yH-PF4"/>
+                            <constraint firstItem="Uxg-B9-kDW" firstAttribute="centerX" secondItem="H6q-Vb-Ay5" secondAttribute="centerX" id="KW2-i0-Q6e"/>
+                            <constraint firstItem="Uxg-B9-kDW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bbd-sD-JmA" secondAttribute="leading" constant="59" id="Mna-5U-1gW"/>
+                            <constraint firstItem="Uxg-B9-kDW" firstAttribute="centerY" secondItem="H6q-Vb-Ay5" secondAttribute="centerY" constant="160" id="cPu-wB-CVC"/>
+                            <constraint firstItem="acT-1d-evo" firstAttribute="centerX" secondItem="H6q-Vb-Ay5" secondAttribute="centerX" id="cSO-a5-CfJ"/>
+                            <constraint firstItem="bbd-sD-JmA" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Uxg-B9-kDW" secondAttribute="trailing" constant="59" id="i24-M7-UnB"/>
+                            <constraint firstItem="Uxg-B9-kDW" firstAttribute="top" secondItem="t5J-Gw-OLM" secondAttribute="bottom" constant="117" id="nf4-ge-Doj"/>
+                            <constraint firstItem="t5J-Gw-OLM" firstAttribute="leading" secondItem="bbd-sD-JmA" secondAttribute="leading" constant="160.5" id="oEK-oX-raJ"/>
+                            <constraint firstItem="t5J-Gw-OLM" firstAttribute="top" secondItem="acT-1d-evo" secondAttribute="bottom" constant="115" id="xIm-Pg-eCK"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="bbd-sD-JmA"/>
                     </view>
                     <navigationItem key="navigationItem" id="pG2-yx-G4R">
